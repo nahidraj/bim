@@ -38,6 +38,10 @@
 .banner_sm_main{
   left: 0;
   bottom: 20px;
+  .slick-list{
+    padding: 10px 0 !important;
+    margin: -10px 0;
+  }
   .slider_sm_item{
     border-radius: 50%;
     border: 1px solid $black;
@@ -47,6 +51,12 @@
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
+      transition: $transition;
+    }
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
     }
   }
 }

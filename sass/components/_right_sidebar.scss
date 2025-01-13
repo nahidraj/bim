@@ -11,6 +11,12 @@
     }
     .img{
       max-width: 200px;
+      overflow: hidden;
+      img{
+        transition: $transition;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     .text{
       margin-top: 5px;
@@ -30,6 +36,16 @@
     .file{
       max-width: 133px;
       margin-top: 20px;
+      img{
+        transition: $transition;
+      }
+    }
+    &:hover{
+      .img,.file{
+        img{
+          transform: scale(1.05);
+        }
+      }
     }
   }
   .item_box+.item_box{
