@@ -1,0 +1,23 @@
+.research_area{
+  .research_item{
+    overflow: hidden;
+    img{
+      transition: $transition;
+    }
+    .text{
+      background: rgba(40, 43, 102, 0.4);
+      padding: 10px 20px;
+      .title{
+        font-size: 20px;
+        font-weight: 500;
+        color: $white;
+        font-family: $times;
+      }
+    }
+    &:hover{
+      img{
+        transform: scale(1.05);
+      }
+    }
+  }
+}

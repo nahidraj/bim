@@ -1,0 +1,24 @@
+.news_ticker_area {
+  margin-top: 5px;
+
+  .new_bg {
+    background: #E8E8E8;
+  }
+
+  .title {
+    background: $black;
+    padding: 15px 40px;
+    font-size: 20px;
+    color: $white;
+    font-weight: 600;
+    font-family: $times;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    color: $black;
+    font-family: $times;
+    padding: 0 20px;
+  }
+}

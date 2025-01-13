@@ -1,0 +1,28 @@
+@import "../variable/variable";
+@import "../mixin/font";
+
+.header_area {
+  padding: 0px 0;
+  position: relative;
+  z-index: 999;
+  background-color: $white;
+  width: 100%;
+  border-top: 8px solid $black;
+  padding: 10px 0;
+}
+
+.sticky-menu {
+  position: fixed;
+  left: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  animation: 700ms ease-in-out 0s normal none 1 running fadeInDown;
+  border-radius: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#header-fixed-height.active-height {
+  display: block;
+  height: 102px;
+}

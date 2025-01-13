@@ -1,0 +1,33 @@
+.award_area{
+  .award_slider{
+    padding: 0 50px;
+  }
+  .award_item{
+    padding: 0 20px;
+  }
+  .arrow{
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: #F0F2F6;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    &:hover{
+      background: $primary;
+      color: $white;
+    }
+  }
+  .arrow_left{
+    left: 0;
+  }
+  .arrow_right{
+    right: 0;
+  }
+}

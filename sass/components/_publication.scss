@@ -1,0 +1,23 @@
+.publication_area {
+  .publication_item {
+    .img {
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+
+    .text {
+      background: $black;
+      padding: 5px 10px;
+      border-top: 3px solid $primary;
+
+      .title {
+        font-family: $times;
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
