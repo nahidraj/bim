@@ -1,0 +1,64 @@
+.important_event {
+  .event_slider{
+    margin-top: 20px;
+  }
+  .title {
+    a {
+      font-size: 12px;
+      font-weight: 500;
+      color: $primary;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .arrow {
+      width: 18px;
+      height: 18px;
+      background: #F0F2F6;
+      border-radius: 3px;
+      font-size: 8px;
+    }
+  }
+
+  .event_item {
+    .date {
+      color: $white;
+      font-family: $times;
+      background: $black;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 80%;
+
+      .month {
+        font-size: 12px;
+      }
+    }
+
+    .text {
+      margin-top: 0;
+
+      .e_title {
+        font-size: 16px;
+        font-family: $times;
+        font-weight: 500;
+      }
+      p{
+        margin: 5px 0 5px 0;
+        font-weight: 500;
+      }
+      .date_time{
+        color: #757575;
+        font-size: 12px;
+        font-family: $times;
+      }
+    }
+  }
+  .event_item+.event_item{
+    margin-top: 12px;
+  }
+}

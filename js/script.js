@@ -56,6 +56,13 @@
       }
     }]
   });
+  // search option js
+  $('.search_btn').click(function () {
+    $('.search-option').slideDown()
+  })
+  $('.close-search').click(function () {
+    $('.search-option').slideUp()
+  })
 
   // banner sm slider js
   $(".banner_sm_slider").slick({
@@ -86,6 +93,37 @@
     centerPadding: '0',
     prevArrow: $(".arrows .prev-arrow"),
     nextArrow: $(".arrows .next-arrow"),
+  });
+
+  // Event slider js
+  $(".event_slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 600,
+    arrows: true,
+    vertical:true,
+    loop: true,
+    dots: false,
+    centerPadding: '0',
+    prevArrow: $(".arrows .e-prev-arrow"),
+    nextArrow: $(".arrows .e-next-arrow"),
+  });
+
+  // Maritime slider js
+  $(".maritime_slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 600,
+    arrows: true,
+    loop: true,
+    dots: false,
+    centerPadding: '0',
+    prevArrow: `<i class="fas arrow arrow-prev fa-chevron-left"></i>`,
+    nextArrow: `<i class="fas arrow arrow-next fa-chevron-right"></i>`,
   });
 
   // news slider js

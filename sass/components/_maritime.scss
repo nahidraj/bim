@@ -1,0 +1,64 @@
+.maritime_slider {
+  margin-top: 20px;
+
+  .maritime_item {
+    overflow: hidden;
+
+    img {
+      transition: $transition;
+    }
+
+    .text {
+      padding: 20px;
+
+      .m_title {
+        color: $white;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: $times;
+        max-width: 180px;
+        margin: 0 auto;
+      }
+
+      p {
+        font-family: $times;
+        color: $white;
+        margin-top: 4px;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.06);
+      }
+    }
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background: #F0F2F6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
+    cursor: pointer;
+    transition: $transition;
+    &:hover{
+      background: $primary;
+      color: $white;
+    }
+  }
+
+  .arrow-prev {
+    left: 0;
+  }
+  .arrow-next {
+    right: 0;
+  }
+}

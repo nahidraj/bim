@@ -19,6 +19,7 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 9;
+    transition: $transition;
     &:hover{
       background: $primary;
       color: $white;

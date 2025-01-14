@@ -2,9 +2,133 @@
 @import "../mixin/font";
 
 .footer_area {
-  margin-top: 24px;
+  margin-top: 60px;
+  background: #002147;
+  padding: 30px 0 20px;
 
-  
+  .footer_social {
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+
+    .title {
+      font-family: $robot;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    ul {
+      li {
+        a {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: $white;
+          font-size: 20px;
+          border-radius: 4px;
+        }
+
+        .fb {
+          background: #3B5998;
+        }
+
+        .tw {
+          background: #000000;
+
+        }
+
+        .lin {
+          background: #006599;
+        }
+
+        .yt {
+          background: #BD0F33;
+        }
+      }
+    }
+  }
+
+  .footer_widget {
+    .ft_title {
+      color: $white;
+      font-size: 20px;
+      font-weight: 500;
+      font-family: $times;
+      margin-bottom: 10px;
+    }
+
+    .w_title {
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      font-family: $times;
+      margin-bottom: 0px;
+    }
+
+    ul {
+      li {
+        a {
+          font-size: 12px;
+          font-weight: 500;
+          font-family: $times;
+          color: $white;
+        }
+      }
+    }
+
+    .widget_item+.widget_item {
+      margin-top: 20px;
+    }
+  }
+
+  .contact_widget {
+    .info {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: $times;
+      color: $white;
+    }
+
+    ul {
+      li {
+        display: flex;
+        gap: 10px;
+
+        .icon {
+          width: 17px;
+          height: 17px;
+          border-radius: 50%;
+          background: $white;
+          text-align: center;
+          line-height: 17px;
+          flex: 0 0 auto;
+
+          svg {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+
+      li+li {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .footer_btm {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+margin-top: 60px;
+padding-top: 20px;
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: $times;
+      color: $white;
+    }
+  }
 }
 
 /* scroll to top area */
