@@ -3,6 +3,17 @@
     font-size: 35px;
     font-weight: 600;
     margin-bottom: 10px;
+
+    @media (max-width:1399.98px) {
+      font-size: 30px;
+    }
+
+    @media (max-width:767.98px) {
+      font-size: 26px;
+    }
+    @media (max-width:575.98px) {
+      font-size: 22px;
+    }
   }
 
   p {
@@ -10,5 +21,13 @@
     font-weight: 500;
     line-height: 160%;
     text-align: justify;
+
+    @media (max-width:1399.98px) {
+      font-size: 18px;
+    }
+
+    @media (max-width:767.98px) {
+      font-size: 16px;
+    }
   }
 }

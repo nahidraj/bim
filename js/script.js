@@ -77,7 +77,32 @@
     asNavFor: '.banner-slider',
     focusOnSelect: true,
     centerMode: true,
-    centerPadding: '0'
+    centerPadding: '0',
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 9,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 3,
+        }
+      }
+    ]
   });
 
   // news slider js
@@ -93,6 +118,20 @@
     centerPadding: '0',
     prevArrow: $(".arrows .prev-arrow"),
     nextArrow: $(".arrows .next-arrow"),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+        }
+      }
+    ]
   });
 
   // Event slider js
@@ -103,7 +142,7 @@
     autoplaySpeed: 4000,
     speed: 600,
     arrows: true,
-    vertical:true,
+    vertical: true,
     loop: true,
     dots: false,
     centerPadding: '0',
@@ -139,6 +178,15 @@
     centerPadding: '0',
     prevArrow: '<i class="fa-solid arrow arrow_left fa-angle-left"></i>',
     nextArrow: '<i class="fa-solid arrow arrow_right fa-angle-right"></i>',
+    responsive: [
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        }
+      }
+    ]
   });
 
   if ($("#news_ticker").length) {
@@ -301,7 +349,7 @@
   })
 
   // mobilel menu js
-  $(".mobile-topbar .bars i").on("click", function () {
+  $(".mobile-topbar .bars").on("click", function () {
     $(".mobile-menu-overlay,.mobile-menu-main").addClass("active");
     return false;
   });
@@ -310,9 +358,11 @@
     $(".mobile-menu-overlay,.mobile-menu-main").removeClass("active");
   });
 
-  $(".sub-mobile-menu ul").hide();
+  $('.sub-mobile-menu ul').hide();
   $(".sub-mobile-menu a").on("click", function () {
-    $(this).parent(".sub-mobile-menu").children("ul").slideToggle("100");
-    $(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+    $('.sub-mobile-menu ul').not($(this).next("ul")).slideUp(300);
+    $(".sub-mobile-menu a i").not($(this).find("i")).removeClass("fa-chevron-up").addClass("fa-chevron-down");
+    $(this).next("ul").slideToggle(300);
+    $(this).find("i").toggleClass("fa-chevron-up fa-chevron-down");
   });
 })(jQuery);

@@ -30,18 +30,321 @@
   <!-- header area start -->
   <div id="header-fixed-height"></div>
   <header class="header_area" id="sticky-header">
-    <div class="container">
-      <div class="header_main d-flex justify-content-between align-items-center gap-4">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="logo" width="320">
-          </a>
-        </div>
-        <div class="header_info">
-          <div class="top_info d-flex justify-content-end align-items-center gap-4">
-            <div class="info_item flex-shrink-0">
-              <a href="#" class="contribute text-uppercase">contribute</a>
+    <nav class="d-none d-xl-block">
+      <div class="container">
+        <div class="header_main d-flex justify-content-between align-items-center gap-4">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="logo" width="320">
+            </a>
+          </div>
+          <div class="header_info">
+            <div class="top_info d-flex justify-content-end align-items-center gap-4">
+              <div class="info_item flex-shrink-0">
+                <a href="#" class="contribute text-uppercase">contribute</a>
+              </div>
+              <div class="info_item flex-shrink-0">
+                <a href="tel:+8801769702395" class="d-block call">
+                  <h5 class="title text-uppercase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    Call Us</h5>
+                  <p>+8801769702395</p>
+                </a>
+              </div>
+              <div class="info_item flex-shrink-0">
+                <a href="mailto:office@bimradbd.org" class="d-block call">
+                  <h5 class="title text-uppercase">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                      class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+                      <path d="M3 7l9 6l9 -6" /></svg>
+                    Mail Us</h5>
+                  <p>office@bimradbd.org</p>
+                </a>
+              </div>
+              <div class="info_item flex-shrink-0">
+                <button class="search_btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" /></svg>
+                </button>
+              </div>
             </div>
+            <div class="menus gap-4 d-flex align-items-center">
+              <ul class="list-unstyled d-flex align-items-center flex-wrap">
+                <li>
+                  <a href="#" class="main_menu">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="main_menu">About Us <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="sub_menu list-unstyled">
+                    <li>
+                      <a href="#">About BIMRAD</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
+                      </a>
+                      <ul class="sub_menu list-unstyled">
+                        <li>
+                          <a href="#">Management Team</a>
+                        </li>
+                        <li>
+                          <a href="#">Researchers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Partnership</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main_menu">Research <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="sub_menu list-unstyled">
+                    <li>
+                      <a href="#">About BIMRAD</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
+                      </a>
+                      <ul class="sub_menu list-unstyled">
+                        <li>
+                          <a href="#">Management Team</a>
+                        </li>
+                        <li>
+                          <a href="#">Researchers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Partnership</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main_menu">Publication <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="sub_menu list-unstyled">
+                    <li>
+                      <a href="#">About BIMRAD</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
+                      </a>
+                      <ul class="sub_menu list-unstyled">
+                        <li>
+                          <a href="#">Management Team</a>
+                        </li>
+                        <li>
+                          <a href="#">Researchers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Partnership</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main_menu">Events <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="sub_menu list-unstyled">
+                    <li>
+                      <a href="#">About BIMRAD</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
+                      </a>
+                      <ul class="sub_menu list-unstyled">
+                        <li>
+                          <a href="#">Management Team</a>
+                        </li>
+                        <li>
+                          <a href="#">Researchers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Partnership</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#" class="main_menu">Contact <i class="fa-solid fa-chevron-down"></i></a>
+                  <ul class="sub_menu list-unstyled">
+                    <li>
+                      <a href="#">About BIMRAD</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
+                      </a>
+                      <ul class="sub_menu list-unstyled">
+                        <li>
+                          <a href="#">Management Team</a>
+                        </li>
+                        <li>
+                          <a href="#">Researchers</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#">Partnership</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <a href="#" class="theme_btn position-relative">Login
+                <span class="arrow position-absolute">
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="9.83px" height="9.72px" viewBox="0 0 9.83 9.72"
+                    style="overflow:visible;enable-background:new 0 0 9.83 9.72;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill-rule: evenodd;
+                        clip-rule: evenodd;
+                        fill: #FFFFFF;
+                      }
+                    </style>
+                    <defs></defs>
+                    <path class="st0"
+                      d="M8.58,0.33C7.31,1.57,5,1.52,3.75,0.23L3.74,0.22C3.46-0.07,3-0.07,2.71,0.21C2.42,0.49,2.42,0.95,2.7,1.24L2.7,1.24C3.62,2.18,4.88,2.67,6.15,2.7L0.22,8.45c-0.29,0.28-0.3,0.75-0.01,1.04c0.28,0.29,0.75,0.3,1.04,0.02l5.92-5.75C7.16,5.02,7.61,6.3,8.53,7.24l0.01,0.01c0.28,0.29,0.74,0.3,1.03,0.02c0.29-0.28,0.3-0.74,0.02-1.03L9.57,6.22c-1.26-1.29-1.23-3.6,0.04-4.83c0.29-0.28,0.3-0.74,0.02-1.03L9.61,0.34C9.33,0.06,8.87,0.05,8.58,0.33" />
+                  </svg></span>
+              </a>
+            </div>
+          </div>
+          <div class="search-option">
+            <form action="#">
+              <div class="input-groups position-relative">
+                <input type="text" placeholder="Search your keyword..." class="w-100">
+                <button type="submit" class="position-absolute">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                    <path d="M21 21l-6 -6" /></svg>
+                </button>
+                <button type="button" class="bg-transparent border-0 text-white close-search">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M18 6l-12 12" />
+                    <path d="M6 6l12 12" /></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- mobile navbar part start -->
+    <div class="mobile-menu-area d-block d-xl-none">
+      <div class="container">
+        <div class="mobile-topbar">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+              <a href="index.html"> <img src="images/logo.png" width="200" alt="logo"></a>
+            </div>
+            <div class="bars">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu-overlay"></div>
+      <div class="mobile-menu-main">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" width="200" alt="logo"></a>
+        </div>
+        <div class="close-mobile-menu"><i class="fas fa-times"></i></div>
+        <div class="mobile_search">
+          <form action="#">
+            <div class="input-groups position-relative">
+              <input type="text" placeholder="Search your keyword..." class="w-100">
+              <button type="submit" class="position-absolute">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                  <path d="M21 21l-6 -6"></path>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="menu-body">
+          <div class="menu-list">
+            <ul class="list-unstyled">
+              <li class="sub-mobile-menu">
+                <a href="#">Home <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li><a href="index.html">Home One</a></li>
+                  <li><a href="home-two.html">Home Two</a></li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="about.html">About Us</a>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#">Services <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="services.html">Service Single</a>
+                  </li>
+                  <li>
+                    <a href="service-details.html">Service Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#">Projects <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="projects.html">Project Single</a>
+                  </li>
+                  <li>
+                    <a href="project-details.html">Project Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="#">Blog <i class="fas fa-chevron-down float-end"></i></a>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="blog.html">Blog Single</a>
+                  </li>
+                  <li>
+                    <a href="blog-details.html">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-mobile-menu">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap mt-3 px-4">
+          <div class="info_item flex-shrink-0 flex-grow-1">
+            <a href="#" class="contribute text-uppercase">contribute</a>
+          </div>
+          <div class="d-flex align-items-center gap-4 mt-3">
             <div class="info_item flex-shrink-0">
               <a href="tel:+8801769702395" class="d-block call">
                 <h5 class="title text-uppercase">
@@ -69,187 +372,11 @@
                 <p>office@bimradbd.org</p>
               </a>
             </div>
-            <div class="info_item flex-shrink-0">
-              <button class="search_btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                  <path d="M21 21l-6 -6" /></svg>
-              </button>
-            </div>
           </div>
-          <div class="menus gap-4 d-flex align-items-center">
-            <ul class="list-unstyled d-flex align-items-center flex-wrap">
-              <li>
-                <a href="#" class="main_menu">Home</a>
-              </li>
-              <li>
-                <a href="#" class="main_menu">About Us <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub_menu list-unstyled">
-                  <li>
-                    <a href="#">About BIMRAD</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
-                    </a>
-                    <ul class="sub_menu list-unstyled">
-                      <li>
-                        <a href="#">Management Team</a>
-                      </li>
-                      <li>
-                        <a href="#">Researchers</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Partnership</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="main_menu">Research <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub_menu list-unstyled">
-                  <li>
-                    <a href="#">About BIMRAD</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
-                    </a>
-                    <ul class="sub_menu list-unstyled">
-                      <li>
-                        <a href="#">Management Team</a>
-                      </li>
-                      <li>
-                        <a href="#">Researchers</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Partnership</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="main_menu">Publication <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub_menu list-unstyled">
-                  <li>
-                    <a href="#">About BIMRAD</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
-                    </a>
-                    <ul class="sub_menu list-unstyled">
-                      <li>
-                        <a href="#">Management Team</a>
-                      </li>
-                      <li>
-                        <a href="#">Researchers</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Partnership</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="main_menu">Events <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub_menu list-unstyled">
-                  <li>
-                    <a href="#">About BIMRAD</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
-                    </a>
-                    <ul class="sub_menu list-unstyled">
-                      <li>
-                        <a href="#">Management Team</a>
-                      </li>
-                      <li>
-                        <a href="#">Researchers</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Partnership</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="main_menu">Contact <i class="fa-solid fa-chevron-down"></i></a>
-                <ul class="sub_menu list-unstyled">
-                  <li>
-                    <a href="#">About BIMRAD</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Research Management Team <i class="fa-solid fa-chevron-right float-end"></i>
-                    </a>
-                    <ul class="sub_menu list-unstyled">
-                      <li>
-                        <a href="#">Management Team</a>
-                      </li>
-                      <li>
-                        <a href="#">Researchers</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Partnership</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <a href="#" class="theme_btn position-relative">Login
-              <span class="arrow position-absolute">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" width="9.83px" height="9.72px" viewBox="0 0 9.83 9.72"
-                  style="overflow:visible;enable-background:new 0 0 9.83 9.72;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0 {
-                      fill-rule: evenodd;
-                      clip-rule: evenodd;
-                      fill: #FFFFFF;
-                    }
-                  </style>
-                  <defs></defs>
-                  <path class="st0"
-                    d="M8.58,0.33C7.31,1.57,5,1.52,3.75,0.23L3.74,0.22C3.46-0.07,3-0.07,2.71,0.21C2.42,0.49,2.42,0.95,2.7,1.24L2.7,1.24C3.62,2.18,4.88,2.67,6.15,2.7L0.22,8.45c-0.29,0.28-0.3,0.75-0.01,1.04c0.28,0.29,0.75,0.3,1.04,0.02l5.92-5.75C7.16,5.02,7.61,6.3,8.53,7.24l0.01,0.01c0.28,0.29,0.74,0.3,1.03,0.02c0.29-0.28,0.3-0.74,0.02-1.03L9.57,6.22c-1.26-1.29-1.23-3.6,0.04-4.83c0.29-0.28,0.3-0.74,0.02-1.03L9.61,0.34C9.33,0.06,8.87,0.05,8.58,0.33" />
-                </svg></span>
-            </a>
-          </div>
-        </div>
-        <div class="search-option">
-          <form action="#">
-            <div class="input-groups position-relative">
-              <input type="text" placeholder="Search your keyword..." class="w-100">
-              <button type="submit" class="position-absolute">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                  <path d="M21 21l-6 -6" /></svg>
-              </button>
-              <button type="button" class="bg-transparent border-0 text-white close-search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                  class="icon icon-tabler icons-tabler-outline icon-tabler-x">
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M18 6l-12 12" />
-                  <path d="M6 6l12 12" /></svg>
-              </button>
-            </div>
-          </form>
         </div>
       </div>
     </div>
+    <!-- mobile navbar part end -->
   </header>
   <!-- header area end -->
 
@@ -302,46 +429,72 @@
       </div>
       <div class="container banner_sm_main position-absolute start-50 translate-middle-x">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
+          <div class="col-lg-8 col-md-6 col-sm-8 col-5 mx-auto">
             <div class="banner_sm_slider">
               <div class="slider_sm_item">
-                <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-1.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
               <div class="slider_sm_item">
-                <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                <div class="img">
+                  <img src="images/slider-sm-2.jpg" alt="slider-sm" class="img-fluid w-100">
+                </div>
               </div>
             </div>
           </div>
@@ -369,8 +522,8 @@
     <!-- main body info start -->
     <section class="main_body_info mt-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-9">
+        <div class="row g-4">
+          <div class="col-xl-9">
             <div class="body_left_info">
               <div class="about_info">
                 <h1 class="title">Bangladesh Institute of Maritime Research and Development
@@ -407,7 +560,7 @@
                   <h4 class="title">Research Interest</h4>
                 </div>
                 <div class="row g-3">
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <a href="#" class="d-block w-100">
                       <div class="research_item position-relative">
                         <img src="images/research-img-1.jpg" alt="research-img" class="img-fluid w-100">
@@ -418,7 +571,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <a href="#" class="d-block w-100">
                       <div class="research_item position-relative">
                         <img src="images/research-img-2.jpg" alt="research-img" class="img-fluid w-100">
@@ -429,7 +582,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-4 col-md-6">
                     <a href="#" class="d-block w-100">
                       <div class="research_item position-relative">
                         <img src="images/research-img-3.jpg" alt="research-img" class="img-fluid w-100">
@@ -447,7 +600,7 @@
                   <h4 class="title">Publications</h4>
                 </div>
                 <div class="row g-4">
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
                     <a href="#" class="d-block w-100">
                       <div class="publication_item">
                         <div class="img overflow-hidden">
@@ -459,7 +612,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
                     <a href="#" class="d-block w-100">
                       <div class="publication_item">
                         <div class="img overflow-hidden">
@@ -471,7 +624,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
                     <a href="#" class="d-block w-100">
                       <div class="publication_item">
                         <div class="img overflow-hidden">
@@ -483,7 +636,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-3">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
                     <a href="#" class="d-block w-100">
                       <div class="publication_item">
                         <div class="img overflow-hidden">
@@ -600,9 +753,9 @@
                             goes back to 1971 in the battlefields of...</p>
                           <div class="read_more d-flex justify-content-between gap-2 align-items-center mt-2">
                             <span class="line">
-                              <img src="images/line.png" alt="line">
+                              <img src="images/line.png" alt="line" class="img-fluid w-100">
                             </span>
-                            <span class="btn_link">
+                            <span class="btn_link flex-shrink-0">
                               Read More
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"
                                 fill="none">
@@ -625,15 +778,15 @@
                           </span>
                         </div>
                         <div class="text">
-                          <h4 class="title linee-limit-2">A Bangladesh’s Maritime
+                          <h4 class="title line-limit-2">A Bangladesh’s Maritime
                             Perspective of Preventing and</h4>
                           <p class="line-limit-2">THE magnificent origin of Bangladesh’s Armed Forces Day
                             goes back to 1971 in the battlefields of...</p>
                           <div class="read_more d-flex justify-content-between gap-2 align-items-center mt-2">
                             <span class="line">
-                              <img src="images/line.png" alt="line">
+                              <img src="images/line.png" alt="line" class="img-fluid w-100">
                             </span>
-                            <span class="btn_link">
+                            <span class="btn_link flex-shrink-0">
                               Read More
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"
                                 fill="none">
@@ -662,9 +815,9 @@
                             goes back to 1971 in the battlefields of...</p>
                           <div class="read_more d-flex justify-content-between gap-2 align-items-center mt-2">
                             <span class="line">
-                              <img src="images/line.png" alt="line">
+                              <img src="images/line.png" alt="line" class="img-fluid w-100">
                             </span>
-                            <span class="btn_link">
+                            <span class="btn_link flex-shrink-0">
                               Read More
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"
                                 fill="none">
@@ -691,9 +844,9 @@
                             goes back to 1971 in the battlefields of...</p>
                           <div class="read_more d-flex justify-content-between gap-2 align-items-center mt-2">
                             <span class="line">
-                              <img src="images/line.png" alt="line">
+                              <img src="images/line.png" alt="line" class="img-fluid w-100">
                             </span>
-                            <span class="btn_link">
+                            <span class="btn_link flex-shrink-0">
                               Read More
                               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" viewBox="0 0 16 12"
                                 fill="none">
@@ -711,7 +864,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-xl-3">
             <div class="body_right_sidebar">
               <div class="item_box">
                 <h3 class="title text-center">Chairman</h3>
@@ -969,9 +1122,9 @@
 
   <footer class="footer_area">
     <div class="footer_social">
-      <div class="container d-flex align-items-center gap-3">
+      <div class="container d-sm-flex align-items-center gap-3">
         <h3 class="text-uppercase text-white title">Connect with us</h3>
-        <ul class="list-unstyled d-flex flex-wrap gap-2">
+        <ul class="list-unstyled d-flex flex-wrap gap-2 mt-3 mt-sm-0">
           <li><a href="#" class="fb"><i class="fa-brands fa-facebook-f"></i></a></li>
           <li><a href="#" class="tw">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -988,7 +1141,7 @@
     </div>
     <div class="container">
       <div class="row g-4">
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <div class="footer_widget">
             <h4 class="ft_title">Information About
             </h4>
@@ -1014,7 +1167,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <div class="footer_widget">
             <h4 class="ft_title">Research and Publication</h4>
             <div class="widget_item">
@@ -1047,7 +1200,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <div class="footer_widget contact_widget">
             <h4 class="ft_title">Contact Us</h4>
             <ul class="list-unstyled">
@@ -1113,7 +1266,7 @@
             </ul>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-sm-6">
           <div class="footer_widget">
             <h4 class="ft_title">
               <div class="row g-3">

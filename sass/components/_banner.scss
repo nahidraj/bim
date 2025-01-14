@@ -20,7 +20,18 @@
       cursor: pointer;
       transition: $transition;
       border-radius: 5px;
-      &:hover{
+
+      @media (max-width:991.98px) {
+        width: 42px;
+        height: 42px;
+      }
+
+      @media (max-width:575.98px) {
+        width: 30px;
+        height: 30px;
+      }
+
+      &:hover {
         background: $primary;
         color: $white;
       }
@@ -35,26 +46,46 @@
     }
   }
 }
-.banner_sm_main{
+
+.banner_sm_main {
   left: 0;
   bottom: 20px;
-  .slick-list{
+
+  @media (max-width:575.98px) {
+    bottom: 10px;
+  }
+
+  .slick-list {
     padding: 10px 0 !important;
     margin: -10px 0;
   }
-  .slider_sm_item{
-    border-radius: 50%;
-    border: 1px solid $black;
-    margin: 0 10px;
-    cursor: pointer;
-    img{
+
+  .slider_sm_item {
+
+    .img {
+      border-radius: 50%;
+      border: 1px solid $black;
+      margin: 0 10px;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+
+      @media (max-width:575.98px) {
+        width: 36px;
+        height: 36px;
+        margin: 0 5px;
+      }
+    }
+
+    img {
       height: 100%;
       object-fit: cover;
       border-radius: 50%;
       transition: $transition;
     }
-    &:hover{
-      img{
+
+    &:hover {
+      img {
         transform: scale(1.1);
       }
     }

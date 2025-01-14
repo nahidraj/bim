@@ -1,11 +1,17 @@
-.award_area{
-  .award_slider{
+.award_area {
+  .award_slider {
     padding: 0 50px;
   }
-  .award_item{
+
+  .award_item {
     padding: 0 20px;
+
+    @media (max-width:575.98px) {
+      padding: 0 5px;
+    }
   }
-  .arrow{
+
+  .arrow {
     width: 45px;
     height: 45px;
     border-radius: 4px;
@@ -20,15 +26,23 @@
     transform: translateY(-50%);
     z-index: 9;
     transition: $transition;
-    &:hover{
+
+    @media (max-width:767.98px) {
+      width: 34px;
+      height: 34px;
+    }
+
+    &:hover {
       background: $primary;
       color: $white;
     }
   }
-  .arrow_left{
+
+  .arrow_left {
     left: 0;
   }
-  .arrow_right{
+
+  .arrow_right {
     right: 0;
   }
 }

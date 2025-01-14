@@ -30,6 +30,9 @@
         font-family: $times;
         font-weight: 600;
         color: $black;
+        @media (max-width:991.98px) {
+          font-size: 18px;;
+        }
       }
 
       p {
@@ -43,6 +46,9 @@
           font-size: 16px;
           font-weight: 500;
           color: $black;
+          @media (max-width:991.98px) {
+            font-size: 13px;
+          }
         }
       }
     }
