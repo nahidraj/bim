@@ -1,0 +1,43 @@
+.page_header {
+  padding: 40px 0;
+  color: #ffffff;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .page_title {
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 1.2em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: $times;
+  }
+
+  .page_nav {
+    text-align: left;
+    padding-bottom: 15px;
+    margin-top: 14px;
+
+    li {
+      font-size: 16px;
+      font-weight: 500;
+      a{
+        color: $white;
+        
+        i{
+          font-size: 12px;
+          padding: 0 12px 0 10px;
+        }
+      }
+      &:last-child{
+        i{
+          display: none;
+        }
+      }
+    }
+  }
+}
+

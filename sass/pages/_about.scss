@@ -1,0 +1,40 @@
+.about_page_area {
+  padding-top: 80px;
+  .text{
+    .title,.title2{
+      font-family: $times;
+    }
+    .title{
+      font-size: 30px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 15px;
+    }
+    .title2{
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    p{
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 160%;
+      text-align: justify;
+    }
+    h4,h5,h6{
+      margin-top: 20px;
+      font-family: $times;
+      font-weight: 600;
+    }
+    ul{
+      padding-left: 16px;
+      margin-top: 20px;
+      li{
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

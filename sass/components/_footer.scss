@@ -1,8 +1,43 @@
 @import "../variable/variable";
 @import "../mixin/font";
 
+.social_icon {
+  li {
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      font-size: 20px;
+      border-radius: 4px;
+      &:hover{
+        transform: translateY(-5px);
+      }
+    }
+
+    .fb {
+      background: #3B5998;
+    }
+
+    .tw {
+      background: #000000;
+
+    }
+
+    .lin {
+      background: #006599;
+    }
+
+    .yt {
+      background: #BD0F33;
+    }
+  }
+}
+
 .footer_area {
-  margin-top: 60px;
+  margin-top: 80px;
   background: #002147;
   padding: 30px 0 20px;
 
@@ -15,38 +50,6 @@
       font-family: $robot;
       font-size: 20px;
       font-weight: 400;
-    }
-
-    ul {
-      li {
-        a {
-          width: 40px;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: $white;
-          font-size: 20px;
-          border-radius: 4px;
-        }
-
-        .fb {
-          background: #3B5998;
-        }
-
-        .tw {
-          background: #000000;
-
-        }
-
-        .lin {
-          background: #006599;
-        }
-
-        .yt {
-          background: #BD0F33;
-        }
-      }
     }
   }
 
