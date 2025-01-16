@@ -57,6 +57,9 @@
       line-height: 140%;
       margin-bottom: 15px;
       transition: $transition;
+      @media (max-width:767.98px) {
+        font-size: 15px;
+      }
     }
 
     p {

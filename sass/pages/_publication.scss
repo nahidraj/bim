@@ -2,11 +2,13 @@
   padding-top: 80px;
 
   .publication_item {
-    background: #f5f5f5;
+    background: $white;
     transition: $transition;
     position: relative;
     z-index: 1;
     height: 100%;
+    border: 1px solid transparent;
+    overflow: hidden;
 
     .pub-img {
       img {
@@ -15,7 +17,13 @@
     }
 
     .content {
+      visibility: hidden;
+      opacity:0;
       padding: 14px;
+      background: $white;
+      left: 0;
+      bottom: 20px;
+      transition: $transition;
 
       h3 {
         font-size: 22px;
@@ -23,6 +31,9 @@
         font-family: $times;
         color: $primary;
         margin-bottom: 8px;
+        @media (max-width:767.98px) {
+          font-size: 18px;
+        }
       }
 
       p {
@@ -33,9 +44,18 @@
           font-weight: 700;
         }
       }
+
     }
 
     &:hover {
+      border-color: $black;
+
+      .content {
+        bottom: 0;
+        visibility: visible;
+        opacity: 1;
+      }
+
       .pub-img {
         img {
           transform: scale(1.05);

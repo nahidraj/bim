@@ -1,5 +1,6 @@
-.faq_page_area{
+.faq_page_area {
   padding-top: 80px;
+
   .faq-body {
     .accordion-button:focus {
       box-shadow: none;
@@ -22,6 +23,11 @@
       position: relative;
       font-family: $times;
 
+      @media (max-width:575.98px) {
+        font-size: 20px;
+        padding: 16px;
+      }
+
       &::after {
         background: none;
       }
@@ -38,12 +44,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        svg{
+
+        svg {
           width: 20px;
           height: 20px;
           stroke: $primary;
         }
-        .minus{
+
+        .minus {
           display: none;
         }
       }
@@ -56,10 +64,12 @@
 
       .arrow-icon {
         background: #f5f5f5;
-        .minus{
+
+        .minus {
           display: block;
         }
-        .plus{
+
+        .plus {
           display: none;
         }
       }
@@ -72,6 +82,10 @@
     .accordion-body {
       padding: 24px;
       padding-top: 0;
+      @media (max-width:575.98px) {
+        padding: 16px;
+        padding-top: 0;
+      }
     }
   }
 }

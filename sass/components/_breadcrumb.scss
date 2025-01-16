@@ -1,12 +1,16 @@
 .page_header {
-  padding: 40px 0;
   color: #ffffff;
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+  .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+  }
+
   .page_title {
-    font-size: 48px;
+    font-size: 32px;
     color: #ffffff;
     line-height: 1.2em;
     font-weight: 800;
@@ -14,30 +18,37 @@
     text-transform: uppercase;
     margin: 0;
     font-family: $times;
+
+    @media (max-width:767.98px) {
+      font-size: 22px;
+    }
   }
 
   .page_nav {
     text-align: left;
-    padding-bottom: 15px;
-    margin-top: 14px;
 
     li {
       font-size: 16px;
       font-weight: 500;
-      a{
-        color: $white;
-        
-        i{
-          font-size: 12px;
-          padding: 0 12px 0 10px;
-        }
+
+      @media (max-width:767.98px) {
+        font-size: 14px;
       }
-      &:last-child{
-        i{
+
+      a {
+        color: $white;
+
+      }
+      i {
+        font-size: 12px;
+        padding: 0 12px 0 10px;
+      }
+
+      &:last-child {
+        i {
           display: none;
         }
       }
     }
   }
 }
-
