@@ -7,6 +7,17 @@
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Check if the modal has already been shown in this session
+    if (!sessionStorage.getItem("modalShown")) {
+      var myModal = new bootstrap.Modal(document.getElementById("onloadModal"));
+      myModal.show();
+      // Mark the modal as shown
+      sessionStorage.setItem("modalShown", "true");
+    }
+  });
+  
+
   // Menu dropdown js
   $(".menu_action_btn").on("click", function () {
     $(".menu_dropdown_main").addClass("open")
@@ -118,8 +129,7 @@
     centerPadding: '0',
     prevArrow: $(".arrows .prev-arrow"),
     nextArrow: $(".arrows .next-arrow"),
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
@@ -347,6 +357,7 @@
       );
     }
   })
+
 
   // mobilel menu js
   $(".mobile-topbar .bars").on("click", function () {
